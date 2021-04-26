@@ -1,0 +1,52 @@
+import math 
+"""
+entradas
+valor-->int-->va
+salidas
+miles-->int--mil
+decenas-->int-->de
+centenas-->int-->ce
+"""
+va=int(input("Ingrese el valor "))
+mil=math.tanh(va%1000)
+mil=math.tanh(mil%100)
+de=math.tanh(mil/10)
+ce=math.tanh(mil%10)
+if(de>5):
+  if(de==6):
+    re=(10+ce)
+    va=va-re
+    print(str(mil)+str(va)+str(ce))
+  elif(de==7):
+    re=(20+ce)
+    va=va-re
+    print(str(mil)+str(va)+str(ce))
+  elif(de==8):
+    re=(30+ce)
+    va=va-re
+    print(str(mil)+str(va)+str(ce))
+  else:
+    re=(40+ce)
+    va=va-re
+    print(str(mil)+str(va)+str(ce))
+if(de<5):
+  if(de==1):
+    re=(de*10+ce)
+    va=va-re
+    print(str(mil)+str(va)+str(ce))
+  elif(de==2):
+    re=(de*20+ce)
+    va=va-re
+    print(str(mil)+str(va)+str(ce))
+  elif(de==3):
+    re=(de*30+ce)
+    va=va-re
+    print(str(mil)+str(va)+str(ce))
+  else:
+    re=(de*40+ce)
+    va=va-re
+    print(str(mil)+str(va)+str(ce))
+if(de==0):
+  if(ce>0):
+    va=va-ce
+    print(str(mil)+str(va)+str(ce))
