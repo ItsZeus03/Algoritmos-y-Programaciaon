@@ -1,0 +1,2 @@
+language = "paython3"
+run = "paython3 main.py"
